@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bar{
+  min-height: 50px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 20px;
+  right: 20px;
+  flex-wrap: wrap;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+button{
+  border: 1px solid black;
+}
