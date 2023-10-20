@@ -10,8 +10,8 @@ function useCurrencyInfo(currency) {
         console.log(data);
         
     
-      return data
       }, [currency])
+      return data
     }
 
 export default useCurrencyInfo;

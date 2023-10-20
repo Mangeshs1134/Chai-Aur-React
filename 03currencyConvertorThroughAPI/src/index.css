@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+body{
+    background-image: url('https://shorturl.at/vDILT');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    /* background-color: rgb(186, 188, 188); */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+}
+.full{
+    /* max-width: 1200px; */
+    min-width: 600px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(26, 25, 25);
+        background-color: rgba(214, 140, 140, 0.9);
+    /* opacity: 0.5; */
+}
+.background , .swap ,.convert{
+    display: flex;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+label , input{
+    margin: 10px;
+}
+.rightSide{
+    display: flex;
+    
+}
+select{
+    margin: 10px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 100px;
+}
+.swap-button , .submit {
+    background-color: rgb(104, 126, 255, 0.8);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.upside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
