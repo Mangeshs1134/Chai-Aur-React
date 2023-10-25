@@ -1,19 +1,16 @@
-import React from 'react'
-import useUserHook, { UserContext, UserProvider } from '../Contexts/UserContext'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../Contexts/UserContext'
 
-function Login() {
+function Login(){
 
-    const { setUser} = useContext(UserContext)
+    const {user} = useContext(UserContext)
+    const {setuser}=useContext(UserContext)
 
-    // console.log(user);
-    // console.lo/ g(setUser);
+    setuser("mangesh")
 
   return (
-    <div>
-        <input type="text" placeholder='User-Name' name="" id="" />
-        <input type="text" placeholder='Password' name="" id="" />
-    </div>
+    
+    <div>Login $ {user}</div>
   )
 }
 

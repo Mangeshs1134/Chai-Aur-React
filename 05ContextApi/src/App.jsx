@@ -1,19 +1,18 @@
-import React from 'react'
-import useUserHook, { UserProvider } from '../Contexts/UserContext'
-import Login from '../Components/Login';
+import React , {useState}from 'react'
+import { UserProvider } from '../Contexts/UserContext'
+import Login from '../Components/Login'
 
 function App() {
 
-   
-  
-    
+  const [user, setuser] = useState("Mangesh")
 
   return (
-    <UserProvider   value= { 'user' : "Mangesh Gupta" , setUser }>
- 
-      <Login/>
-
+    <UserProvider value={{user , setuser}}>
+    
+    <Login />
+    
     </UserProvider>
+    
   )
 }
 
